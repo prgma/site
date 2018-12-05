@@ -1,0 +1,33 @@
+{
+  "name": "prgma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve src/index.html --open",
+    "build": "parcel build src/index.html",
+    "deploy": "yarn build && cp now.json dist && now ./dist"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router": "^4.4.1",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/styled-components": "^4.1.3",
+    "apollo-boost": "^0.1.22",
+    "date-fns": "^1.29.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-icons-kit": "^1.2.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^4.1.2",
+    "ts-lint": "^4.5.1",
+    "typescript": "^3.2.1"
+  },
+  "devDependencies": {
+    "now": "^12.1.8",
+    "parcel-bundler": "^1.10.3"
+  }
+}
